@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_sky"
+    tools:context=".fragment.pression.PressingFragment">
+
+    <TextView
+        android:id="@+id/content_txt"
+        android:padding="@dimen/btn_margin"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="56sp"
+        android:gravity="center"
+        android:text="@string/fragment_pressing_conent"
+        style="@style/txt_blue_big_style" />
+
+</FrameLayout>

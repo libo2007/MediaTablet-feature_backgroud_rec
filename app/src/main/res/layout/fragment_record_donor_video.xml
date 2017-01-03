@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical"
+    tools:context="com.jiaying.mediatablet.fragment.authentication.RecordDonorFragment">
+
+    <com.cylinder.www.facedetect.FdNotAuthRecordCameraView
+        android:id="@+id/fdNotAuthCameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/pb"
+            android:progress="0"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_marginLeft="@dimen/btn_record_margin"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/btn_record"
+            android:layout_width="@dimen/btn_record_size"
+            android:layout_height="@dimen/btn_record_size"
+            android:background="@drawable/video_record_normal_selector"
+            android:text="@string/record_video_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_big" />
+    </LinearLayout>
+
+</RelativeLayout>

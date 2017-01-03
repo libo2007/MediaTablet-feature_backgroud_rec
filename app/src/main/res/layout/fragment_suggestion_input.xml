@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.jiaying.mediatablet.fragment.SuggestionInputFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_margin="@dimen/btn_margin"
+        style="@style/txt_blue_style"
+        android:text="尊敬的献浆员您好,如果您对我们有更好的建议和意见，或者对我们的服务有不满意的地方，欢迎您批评指出，对于您的建议我们会及时回复。\n投诉电话：15882323223" />
+
+    <EditText
+        android:gravity="top|left"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/btn_margin"
+        android:layout_weight="1"
+        android:background="@drawable/edit_grey_bg"
+        android:hint="在此写下您的建议或意见"
+        android:padding="@dimen/btn_inner_padding" />
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/btn_style"
+        android:layout_margin="@dimen/btn_margin"
+        android:text="建议" />
+
+</LinearLayout>

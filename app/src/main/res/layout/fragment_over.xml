@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_sky"
+    tools:context="com.jiaying.mediatablet.fragment.OverServiceEvaluateFragment">
+
+    <TextView
+        android:id="@+id/end_slogan_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*********************"
+        android:textColor="#8B0000"
+        android:textSize="90sp" />
+
+    <TextView
+        android:id="@+id/end_thanks_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="30dp"
+        android:text="\n\n感谢您的爱心！\n\n祝您健康快乐！\n\n期待您的再次献浆！"
+        android:textColor="#8B0000"
+        android:textSize="90sp" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="280dp"
+        layout="@layout/dlg_evalution_attitude"/>
+</FrameLayout>
+

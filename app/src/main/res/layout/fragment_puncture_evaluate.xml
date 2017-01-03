@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.jiaying.mediatablet.fragment.PunctureEvaluateFragment">
+
+    <TextView
+        android:id="@+id/content_txt"
+        style="@style/txt_blue_big_style"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:padding="@dimen/btn_margin"
+        android:gravity="center"
+        android:text="@string/fragment_puncture_evaluate_content"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <include layout="@layout/evaluation_item" />
+
+    </LinearLayout>
+
+    <Button
+        style="@style/btn_style"
+        android:text="提交" />
+</LinearLayout>

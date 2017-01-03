@@ -1,0 +1,183 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_service_evalution"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+
+    android:visibility="gone">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_evaluation_puncture"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/content_txt"
+                style="@style/txt_blue_style"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:gravity="center"
+                android:padding="@dimen/btn_margin"
+                android:text="@string/fragment_puncture_evaluate_content"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/btn_margin">
+
+                    <ImageView
+                        android:id="@+id/iv_good_puncture"
+                        android:layout_width="@dimen/face_size"
+                        android:layout_height="@dimen/face_size"
+                        android:layout_marginRight="@dimen/btn_margin"
+                        android:src="@mipmap/good" />
+
+                    <ImageView
+                        android:id="@+id/iv_soso_puncture"
+                        android:layout_width="@dimen/face_size"
+                        android:layout_height="@dimen/face_size"
+                        android:layout_marginRight="@dimen/btn_margin"
+                        android:src="@mipmap/soso" />
+
+                    <ImageView
+                        android:id="@+id/iv_terrible_puncture"
+                        android:layout_width="@dimen/face_size"
+                        android:layout_height="@dimen/face_size"
+                        android:src="@mipmap/terrible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_not_good_puncture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/btn_margin"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <CheckBox
+
+                    android:id="@+id/cb_erzhengchuanci"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/btn_padding"
+                    android:text="二针穿刺"
+                    android:textColor="@color/txt_black" />
+
+                <CheckBox
+
+                    android:id="@+id/cb_tengtong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/btn_padding"
+                    android:text="疼痛"
+                    android:textColor="@color/txt_black" />
+
+                <CheckBox
+
+                    android:id="@+id/cb_huanman"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/btn_padding"
+                    android:text="动作缓慢"
+                    android:textColor="@color/txt_black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_evaluation_attitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/txt_blue_style"
+                android:gravity="center"
+                android:padding="@dimen/btn_margin"
+                android:text="@string/fragment_puncture_evaluate_attitude_content"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <include layout="@layout/evaluation_item" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_not_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/btn_margin"
+                android:layout_marginLeft="@dimen/btn_margin"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <CheckBox
+
+                    android:id="@+id/cb_bulimao"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/btn_padding"
+                    android:text="不礼貌"
+                    android:textColor="@color/txt_black" />
+
+                <CheckBox
+                    android:id="@+id/cb_ruma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/btn_padding"
+                    android:text="辱骂"
+                    android:textColor="@color/txt_black" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/btn_style"
+                android:text="提交"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_evalution_close"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="right|top"
+        android:src="@mipmap/close" />
+</FrameLayout>

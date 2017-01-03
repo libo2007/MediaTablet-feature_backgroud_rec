@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".fragment.collection.MusicCategorizeFragment">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_video_category_margin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_modern"
+            android:layout_width="@dimen/btn_video_category_size"
+            android:layout_height="@dimen/btn_video_category_size"
+            android:background="@drawable/video_category_selector_1"
+            android:text="现代\n音乐"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_big" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btn_video_category_margin"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_popular"
+                android:layout_width="@dimen/btn_video_category_size"
+                android:layout_height="@dimen/btn_video_category_size"
+                android:layout_marginRight="@dimen/btn_video_category_margin"
+                android:background="@drawable/video_category_selector_2"
+                android:text="流行\n歌曲"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_big" />
+
+            <Button
+                android:id="@+id/btn_classic"
+                android:layout_width="@dimen/btn_video_category_size"
+                android:layout_height="@dimen/btn_video_category_size"
+                android:background="@drawable/video_category_selector_3"
+                android:text="经典\n老歌"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_big" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

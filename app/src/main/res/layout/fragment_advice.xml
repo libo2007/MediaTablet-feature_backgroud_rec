@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.jiaying.mediatablet.fragment.AdviceFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_suggestion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/txt_blue_small_more"
+                android:text="尊敬的献浆员您好:\n您可以对我们提出建议，还可以对我们的服务质量给予评价，对于您的建议和评价我们会及时回复。\n投诉电话：15882323223" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_grey_bg"
+                android:gravity="top|left"
+                android:hint="在此写下您的建议或意见"
+                android:padding="@dimen/btn_inner_padding" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line_blue_5_style" />
+        <LinearLayout
+            android:id="@+id/ll_evaluation"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/btn_padding">
+
+                <TextView
+                    style="@style/txt_blue_style"
+                    android:text="穿刺评价" />
+
+                <include layout="@layout/evaluation_item" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line_width"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/btn_padding">
+
+                <TextView
+                    style="@style/txt_blue_style"
+                    android:text="态度评价" />
+
+                <include layout="@layout/evaluation_item" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/big_btn_style"
+        android:text="提交" />
+
+</LinearLayout>

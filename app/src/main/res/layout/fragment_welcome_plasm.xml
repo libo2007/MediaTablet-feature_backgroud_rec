@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_sky"
+    android:orientation="vertical"
+
+    tools:context="com.cylinder.www.ui.WelcomeFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="**********"
+        android:textStyle="bold"
+        android:textColor="#8B0000"
+        android:textSize="80sp" />
+
+    <TextView
+        android:id="@+id/welcome_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="**********"
+        android:textColor="#8B0000"
+        android:textSize="80sp" />
+
+    <TextView
+        android:id="@+id/slogan_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="**********"
+        android:textColor="#8B0000"
+        android:textSize="80sp" />
+
+
+</LinearLayout>

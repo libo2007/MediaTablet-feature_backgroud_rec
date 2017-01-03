@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_standby"
+
+    tools:context=".fragment.authentication.WaitingForDonorFragment">
+
+
+    <TextView
+
+        android:id="@+id/tv_slogan"
+
+        android:layout_width="950dp"
+
+        android:layout_height="200dp"
+
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="200dp"
+
+
+        android:text="献血献浆同样光荣！"
+
+
+        android:textColor="#FF12A5DA"
+
+        android:textSize="70sp" />
+
+</FrameLayout>

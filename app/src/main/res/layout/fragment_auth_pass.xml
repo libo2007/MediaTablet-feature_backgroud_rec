@@ -1,0 +1,304 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_sky"
+    android:orientation="vertical"
+    tools:context=".fragment.authentication.AuthFragment">
+
+    <TextView
+        android:id="@+id/ll_record_previewview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.618" />
+
+    <LinearLayout
+
+        android:id="@+id/ll_bottom_space"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.382"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_leftbottom_space"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/txt_blue_title_style"
+                android:layout_gravity="center"
+                android:text="身份证信息" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/btn_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/txt_blue_style"
+                                android:layout_marginRight="@dimen/btn_margin"
+                                android:text="姓名" />
+
+                            <TextView
+                                android:id="@+id/tv_name"
+                                style="@style/txt_black_style"
+                                android:text="李波" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/btn_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/txt_blue_style"
+                                android:layout_marginRight="@dimen/btn_margin"
+                                android:text="性别" />
+
+                            <TextView
+                                android:id="@+id/tv_sex"
+                                style="@style/txt_black_style"
+                                android:text="男" />
+
+                            <TextView
+                                style="@style/txt_blue_style"
+                                android:layout_marginRight="@dimen/btn_margin"
+                                android:text="     民族" />
+
+                            <TextView
+                                android:id="@+id/tv_nation"
+                                style="@style/txt_black_style"
+                                android:text="汉" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/btn_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/txt_blue_style"
+                                android:layout_marginRight="@dimen/btn_margin"
+                                android:text="出生" />
+
+                            <TextView
+                                android:id="@+id/tv_birthday"
+                                style="@style/txt_black_style"
+                                android:text="1992年10月16号" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/btn_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/txt_blue_style"
+                                android:layout_marginRight="@dimen/btn_margin"
+                                android:text="住址" />
+
+                            <TextView
+                                android:id="@+id/tv_address"
+                                style="@style/txt_black_style"
+                                android:layout_width="300dp"
+                                android:text="四川成都华阳" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_head"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="20dp"
+                        android:src="@mipmap/ic_norse" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/btn_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txt_blue_style"
+                        android:layout_marginRight="@dimen/btn_margin"
+                        android:text="公民身份号码" />
+
+                    <TextView
+                        android:id="@+id/tv_idcard"
+                        style="@style/txt_black_style"
+                        android:text="51100102010010150105" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/line_blue_5_v_style"
+            android:layout_margin="10dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_rightbottom_space"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/txt_blue_title_style"
+                android:layout_gravity="center"
+                android:text="档案信息" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/btn_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/txt_blue_style"
+                                android:layout_marginRight="@dimen/btn_margin"
+                                android:text="姓名" />
+
+                            <TextView
+                                style="@style/txt_black_style"
+                                android:text="***" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/btn_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/txt_blue_style"
+                                android:layout_marginRight="@dimen/btn_margin"
+                                android:text="性别" />
+
+                            <TextView
+                                android:id="@+id/tv_document_gender"
+                                style="@style/txt_black_style"
+                                android:text="*" />
+
+                            <TextView
+                                style="@style/txt_blue_style"
+                                android:layout_marginRight="@dimen/btn_margin"
+                                android:text="     民族" />
+
+                            <TextView
+                                style="@style/txt_black_style"
+                                android:text="*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/btn_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/txt_blue_style"
+                                android:layout_marginRight="@dimen/btn_margin"
+                                android:text="出生" />
+
+                            <TextView
+                                style="@style/txt_black_style"
+                                android:text="****年**月**日" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/btn_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/txt_blue_style"
+                                android:layout_marginRight="@dimen/btn_margin"
+                                android:text="住址" />
+
+                            <TextView
+                                android:id="@+id/tv_document_address"
+                                style="@style/txt_black_style"
+                                android:layout_width="300dp"
+                                android:text="*************" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_document_pic"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="20dp"
+                        android:src="@mipmap/ic_norse" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/btn_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txt_blue_style"
+                        android:layout_marginRight="@dimen/btn_margin"
+                        android:text="建档号" />
+
+                    <TextView
+                        android:id="@+id/tv_document_id"
+                        style="@style/txt_black_style"
+                        android:text="******" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+

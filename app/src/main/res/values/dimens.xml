@@ -1,0 +1,46 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size_big">36dp</dimen>
+    <dimen name="text_size_midle">32dp</dimen>
+    <dimen name="text_size_small">24dp</dimen>
+    <dimen name="text_size_small_more">20dp</dimen>
+
+    <dimen name="text_size_small_more_more">12dp</dimen>
+
+    <dimen name="comm_title_height">70dp</dimen>
+    <dimen name="comm_title_margin_right">14dp</dimen>
+    <dimen name="btn_margin">20dp</dimen>
+    <dimen name="btn_margin_much">140dp</dimen>
+    <dimen name="btn_padding">10dp</dimen>
+    <dimen name="btn_height">44dp</dimen>
+    <dimen name="btn_inner_padding">5dp</dimen>
+    <dimen name="login_edit_padding_left">12dp</dimen>
+    <dimen name="edit_height">40dp</dimen>
+    <dimen name="radius">5dp</dimen>
+    <dimen name="line_width">1dp</dimen>
+    <dimen name="head_size">90dp</dimen>
+    <dimen name="check_txt_width">90dp</dimen>
+    <dimen name="server_setting_txt_min_width">240dp</dimen>
+    <dimen name="server_setting_edit_min_width">350dp</dimen>
+    <dimen name="video_item_size">260dp</dimen>
+    <dimen name="image_size">60dp</dimen>
+    <dimen name="plams_progress_width">3000dp</dimen>
+    <dimen name="text_size_display4">112sp</dimen>
+    <dimen name="text_size_display3">56sp</dimen>
+    <dimen name="text_size_display2">45sp</dimen>
+    <dimen name="text_size_display1">34sp</dimen>
+    <dimen name="text_size_headline">24sp</dimen>
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="text_size_subheading">16sp</dimen>
+    <dimen name="text_size_button">14sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_caption">12sp</dimen>
+    <dimen name="btn_video_category_size">200dp</dimen>
+    <dimen name="btn_video_category_margin">100dp</dimen>
+    <dimen name="face_size">90dp</dimen>
+    <dimen name="btn_record_margin">60dp</dimen>
+    <dimen name="btn_record_size">150dp</dimen>
+</resources>

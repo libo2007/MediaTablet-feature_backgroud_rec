@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg"
+    tools:context="com.jiaying.mediatablet.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_record_previewview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_space_v"
+            android:layout_width="1dp"
+            android:layout_height="5dp"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_space_h"
+                android:layout_width="6dp"
+                android:layout_height="1dp"
+                android:orientation="horizontal" />
+
+            <FrameLayout
+                android:id="@+id/fragment_record_container"
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:layout_gravity="left" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_auth_previewview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fragment_auth_container"
+            android:layout_width="1000dp"
+            android:layout_height="1000dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="390dp"
+            android:layout_marginTop="90dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_all_ui"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/left_view_container"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="#bbdefb"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/left_view" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/title_bar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/logo_or_back"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="@dimen/line_width"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/btn_padding"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/title_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_color"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_midle" />
+
+                <LinearLayout
+                    android:id="@+id/ll_cl"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/btn_inner_padding"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <com.jiaying.mediatablet.widget.HorizontalProgressBar
+                        android:id="@+id/collect_pb"
+                        style="@style/progress_v_plams"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:max="600"
+                        android:padding="@dimen/line_width"
+                        android:progress="20" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/time_txt"
+                    style="@style/txt_white_small_style"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="12:23" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/image_size"
+                        android:layout_height="@dimen/image_size"
+                        android:layout_gravity="center"
+                        android:scaleType="center"
+                        android:src="@mipmap/wifi" />
+
+                    <TextView
+                        android:id="@+id/wifi_not_txt"
+                        style="@style/txt_black_style"
+                        android:layout_gravity="center"
+                        android:text="×" />
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/battery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/txt_grey" />
+
+                    <com.jiaying.mediatablet.widget.VerticalProgressBar
+                        android:id="@+id/battery_pb"
+                        style="@style/progress_v_batery"
+                        android:layout_width="18dp"
+                        android:layout_height="26dp"
+                        android:layout_weight="1"
+
+                        android:max="100"
+                        android:padding="@dimen/line_width"
+                        android:progress="20" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/overflow_image"
+                    android:layout_width="46dp"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="center"
+                    android:src="@mipmap/overflow" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/net_state_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/net_wrong_color"
+                android:padding="@dimen/btn_padding"
+                android:text="连接不可用，请检查网络和服务器配置"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+            <RadioGroup
+                android:id="@+id/tab_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/line_width"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/btn_video"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/watch_film"
+                    android:textColor="@drawable/radio_btn_text"
+                    android:textSize="@dimen/text_size_small" />
+
+                <View
+                    android:layout_width="@dimen/line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_color" />
+
+                <RadioButton
+                    android:id="@+id/btn_surfinternet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/surf_internet"
+                    android:textColor="@drawable/radio_btn_text"
+                    android:textSize="@dimen/text_size_small" />
+
+                <View
+                    android:layout_width="@dimen/line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_color" />
+
+                <RadioButton
+                    android:id="@+id/btn_music"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/play_music"
+                    android:textColor="@drawable/radio_btn_text"
+                    android:textSize="@dimen/text_size_small" />
+
+            </RadioGroup>
+
+
+            <FrameLayout
+                android:id="@+id/fl_main_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/ll_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@+id/fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#FF000000" />
+
+                <TextView
+                    android:id="@+id/battery_not_connect_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="@dimen/btn_padding"
+                    android:text="@string/not_recharging"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/text_size_midle"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_bt_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_bt_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:padding="@dimen/btn_padding"
+                        android:text="@string/bt_connecting"
+                        android:textColor="@color/main_color"
+                        android:textSize="@dimen/text_size_midle" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_bt_result_control"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/btn_bt_jump"
+                            style="@style/btn_style"
+                            android:layout_width="0dp"
+                            android:layout_marginRight="@dimen/btn_inner_padding"
+                            android:layout_weight="1"
+                            android:text="@string/bt_connect_jump" />
+
+                        <Button
+                            android:id="@+id/btn_bt_reconnect"
+                            style="@style/btn_style"
+                            android:layout_width="0dp"
+                            android:layout_marginRight="@dimen/btn_inner_padding"
+                            android:layout_weight="1"
+                            android:text="@string/bt_connect_ret" />
+
+                        <Button
+                            android:id="@+id/btn_bt_set"
+                            style="@style/btn_style"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/bt_connect_set" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/dlg_call_service" />
+
+                <include layout="@layout/dlg_evalution" />
+
+
+                <ImageView
+                    android:id="@+id/iv_start_fist"
+                    android:layout_width="400dp"
+                    android:layout_height="360dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/btn_device_available"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="设备可用"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_device_unavailable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="设备不可用"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_send_donor_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="浆员信息" />
+
+                    <Button
+                        android:id="@+id/btn_connect_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="连接蓝牙"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_connect_bt_fail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="连接蓝牙失败"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_auth_pass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="认证通过" />
+
+                    <Button
+                        android:id="@+id/btn_compression"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="加压" />
+
+                    <Button
+                        android:id="@+id/btn_puncture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="穿刺" />
+
+                    <Button
+                        android:id="@+id/btn_collection_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开始采集" />
+
+                    <Button
+                        android:id="@+id/btn_plasma_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="血浆重量" />
+
+                    <Button
+                        android:id="@+id/btn_pipe_low"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="压力过低" />
+
+                    <Button
+                        android:id="@+id/btn_pipe_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="压力恢复" />
+
+                    <Button
+                        android:id="@+id/btn_tranfuse_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="回输开始" />
+
+                    <Button
+                        android:id="@+id/btn_tranfuse_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="回输结束" />
+
+                    <Button
+                        android:id="@+id/btn_collection_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="采集结束" />
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

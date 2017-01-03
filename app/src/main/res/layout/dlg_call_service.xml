@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dlg_call_service_view"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/main_color_press"
+    android:orientation="vertical"
+    android:padding="@dimen/btn_padding"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_service_zhijin"
+                style="@style/txt_call_service_style"
+                android:background="@drawable/tv_white_selector"
+                android:text="纸巾" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_service_tangguo"
+                style="@style/txt_call_service_style"
+                android:background="@drawable/tv_white_selector"
+                android:text="糖果" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_service_reshui"
+                style="@style/txt_call_service_style"
+                android:background="@drawable/tv_white_selector"
+                android:text="热水" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_padding">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_service_zazhi"
+                style="@style/txt_call_service_style"
+                android:background="@drawable/tv_white_selector"
+                android:text="杂志" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_service_zixun"
+                style="@style/txt_call_service_style"
+                android:background="@drawable/tv_white_selector"
+                android:text="咨询" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dlg_call_service_cancle_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_service_cancel"
+                style="@style/txt_call_service_style"
+                android:background="@drawable/btn_selector"
+                android:text="取消"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

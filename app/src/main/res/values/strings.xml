@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">多媒体交互终端</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_initialize">InitializeActivity</string>
+    <string name="watch_film">观看影片</string>
+    <string name="video_list">播放列表</string>
+    <string name="surf_internet">上网娱乐</string>
+    <string name="advice">建议评价</string>
+    <string name="suggestion">建议</string>
+    <string name="evalution">评价</string>
+    <string name="appointment">预约服务</string>
+
+    <string name="appoint">预约</string>
+
+    <string name="func_setting">功能配置</string>
+    <string name="server_setting">参数配置</string>
+    <string name="restar">软件重启</string>
+    <string name="recharging">正在充电</string>
+    <string name="not_recharging">电源未连接，请连接电源！</string>
+    <string name="fragment_server_setting_title">参数设置</string>
+    <string name="fragment_wait_check_title">连接服务器</string>
+    <string name="fragment_wait_plasm_title">等待献浆员</string>
+    <string name="fragment_welcome_plasm_title">欢迎您</string>
+    <string name="fragment_pressing_title">加压提示</string>
+    <string name="fragment_puncture_title">穿刺提示</string>
+    <string name="fragment_puncture_content">即将开始穿刺，请放松，如有任何不适，请告知护士</string>
+    <string name="fragment_puncture_video">播放视频</string>
+    <string name="fragment_puncture_evaluate">穿刺评价</string>
+    <string name="fragment_puncture_evaluate_content">请您对刚才护士的穿刺水平进行评价，我们会认真听取您的意见！</string>
+    <string name="fragment_puncture_evaluate_attitude_content">请您对刚才护士的态度进行评价，我们会认真听取您的意见！</string>
+
+    <string name="fragment_collect_title">采集提示</string>
+    <string name="fragment_collect_content">开始进入采集，采集过程中您有任何需要,请点击电话按钮，护士会及时为您服务!</string>
+
+    <string name="auth">认证中</string>
+    <string name="authres">等待应答</string>
+    <string name="lowpower">电量不足</string>
+    <string name="check1">检查设备状态res</string>
+    <string name="check2">检查设备状态start</string>
+    <string name="play_video">播放视频</string>
+    <string name="fragment_pressing_conent">现在开始加压，如果有任何不适请告知护士</string>
+    <string name="fragment_over_evaluate_conent">请您对整个献浆过程中护士的服务进行评价，我们会认真听取您的意见!</string>
+    <string name="general_welcome">献血献浆同样光荣！</string>
+    <string name="sloganoneabove">献血浆，利己利他！</string>
+    <string name="sloganonebelow">欢迎您来献浆！</string>
+    <string name="slogantwoabove">比海洋、天空更为宽广的是奉献之心。</string>
+    <string name="slogantwoabelow">感谢您来献浆！</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="battery_low">电量不足，请连接电源后！点击继续。</string>
+    <string name="end">感谢您</string>
+    <string-array name="week_day">
+
+        <item>星期天</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string name="title_activity_launch">LaunchActivity</string>
+    <string name="bt_connecting">蓝牙正在连接中...</string>
+    <string name="bt_connect_fail">蓝牙连接失败！\n请确认蓝牙名输入正确</string>
+    <string name="bt_connect_jump">跳过</string>
+    <string name="bt_connect_ret">重连</string>
+    <string name="bt_connect_set">设置</string>
+    <string name="bt_name_empty">请先设置蓝牙名字</string>
+    <string name="record_donor">录制浆员视频</string>
+    <string name="record_norse">录制护士视频</string>
+    <string name="record_donor_over">浆员视频录制完成</string>
+    <string name="record_norse_over">护士视频录制完成</string>
+    <string name="record_time_not_enough">请一直按住录制视频直到录制完成</string>
+    <string name="record_video_name">录视频</string>
+    <string name="play_music">播放音乐</string>
+    <string name="music_list">音乐列表</string>
+
+</resources>
